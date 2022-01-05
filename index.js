@@ -23,15 +23,4 @@ class Formatter {
   
     }).join(' ');
   }
-    // let titleizedString = string.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
-    // return titleizedString
-  }
-
-
-const cap = str => str.charAt(0).toUpperCase() + str.slice(1);
-const movieTitleFormatter = (title = '') => {
-  const exludeWords = ['of', 'the']
-  return cap(
-    title.replace(/\b\w+\b/g, m => exludeWords.includes(m) ? m : cap(m))
-  );
 }
